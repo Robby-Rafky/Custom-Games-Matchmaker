@@ -70,7 +70,7 @@ class PlayerSelection:
 
     def load_players(self):
         self.player_list = []
-        with open("players.json") as f:
+        with open("../CustomMatchmakerBOT/players.json") as f:
             self.player_data = json.load(f)
         for item in self.player_data:
             self.player_list.append(f"{item} | {self.player_data[item]['name']}")
